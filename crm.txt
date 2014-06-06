@@ -2,3 +2,5 @@
 do we want a customer group ID field?
 do we want a customer ID field?
 what is brand type?
+keeping a contact and a login user separate
+
