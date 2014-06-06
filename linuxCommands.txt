@@ -1,0 +1,1 @@
+Search Words In Files: find . -type f -exec grep -l “word_to_search_regex" {} +
