@@ -1,1 +1,4 @@
 alias repos='cd ~/Repositories'
+
+alias vi='sudo vi'
+alias apre='sudo apachectl restart'

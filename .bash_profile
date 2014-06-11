@@ -18,17 +18,18 @@ alias ........='cd ../../../../'
 alias h='history'
 
 alias ll='ls -FGlAhp '
-alias repos='cd ~/Repositories'
 
 # Add to grep: color, line numbers
 alias grep="grep --color -n "
 
 alias reload='source ~/.bash_profile'
 alias vi='vim'
-alias vi='sudo vi'
-alias apre='sudo apachectl restart'
 
 alias ~='cd ~'
 
 export PATH="$PATH:/usr/local/bin/"
 export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+
+if [ -f ~/.bash_mac ]; then
+    . ~/.bash_mac
+fi
