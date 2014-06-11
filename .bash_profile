@@ -32,6 +32,9 @@ export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/s
 
 alias gitbash="wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_profile > ~/.bash_profile"
 
+alias gitvim="wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.vimrc > ~/.vimrc"
+
+
 if [ -f ~/.bash_mac ]; then
     . ~/.bash_mac
 fi
