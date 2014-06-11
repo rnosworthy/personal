@@ -30,6 +30,8 @@ alias ~='cd ~'
 export PATH="$PATH:/usr/local/bin/"
 export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 
+alias gitbash="wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_profile > ~/.bash_profile"
+
 if [ -f ~/.bash_mac ]; then
     . ~/.bash_mac
 fi
