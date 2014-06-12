@@ -2,13 +2,14 @@ alias reload='source ~/.bash_profile'
 
 alias vi='vim'
 
-function gitbash(){
+function gitdots(){
 
     if [ ! -d ~/.dotfiles ]; then
        md ~/.dotfiles 
     fi
     
     wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_profile > ~/.bash_profile
+    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.vimrc > ~/.vimrc
     
     wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.dotfiles/.bash_files > ~/.dotfiles/.bash_files
     wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.dotfiles/.bash_history > ~/.dotfiles/.bash_history
