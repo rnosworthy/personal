@@ -14,10 +14,10 @@ function gitbash(){
     
     cd .dotfiles
 
-    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_files > ~/.dotfiles/.bash_files
-    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_history > ~/.dotfiles/.bash_history
-    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_prompt > ~/.dotfiles/.bash_prompt
-    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_share > ~/.dotfiles/.bash_share
+    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.dotfiles/.bash_files > ~/.dotfiles/.bash_files
+    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.dotfiles/.bash_history > ~/.dotfiles/.bash_history
+    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.dotfiles/.bash_prompt > ~/.dotfiles/.bash_prompt
+    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.dotfiles/.bash_share > ~/.dotfiles/.bash_share
 
 }
 
