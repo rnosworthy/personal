@@ -2,8 +2,24 @@ alias reload='source ~/.bash_profile'
 
 alias vi='vim'
 
-alias gitbash="wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_profile > ~/.bash_profile"
-alias gitvim="wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.vimrc > ~/.vimrc"
+function gitbash(){
+
+    if [ ! -d ~/.dotfiles ]; then
+       md ~/.dotfiles 
+    fi
+    
+    cd ~
+
+    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_profile > ~/.bash_profile
+    
+    cd .dotfiles
+
+    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_files > ~/.dotfiles/.bash_files
+    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_history > ~/.dotfiles/.bash_history
+    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_prompt > ~/.dotfiles/.bash_prompt
+    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_share > ~/.dotfiles/.bash_share
+
+}
 
 # Add to grep: color, line numbers
 alias grep="grep --color -n "
