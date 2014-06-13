@@ -1,6 +1,7 @@
 alias reload='source ~/.bash_profile'
 
-alias vi='vim -u ~/.vimrc'
+alias vi='vim'
+alias svi='sudo vim -u ~/.vimrc'
 
 function gitdots(){
 
