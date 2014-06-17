@@ -3,6 +3,7 @@ alias repos='cd ~/Repositories'
 alias vi='sudo vi'
 alias apre='sudo apachectl restart'
 alias apa='cd /private/etc/apache2/'
+alias crm='cd ~/Repositories/oss/crm'
 
 # SSH auto-completion based on entries in known_hosts.
 if [[ -e ~/.ssh/known_hosts ]]; then
