@@ -13,3 +13,9 @@ fi
 #if [[ -e ~/.ssh/config ]]; then
 #    complete -o default -W "$(cat ~/.ssh/config | sed '' | sort | uniq)"
 #fi
+
+export PATH="/usr/local/bin/:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/git/bin:$PATH"
+export PATH="/usr/local/mysql/bin:$PATH"
+export PATH="/usr/local/pcre/bin:$PATH"
