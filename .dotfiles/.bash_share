@@ -9,9 +9,9 @@ function gitdots(){
        md ~/.dotfiles 
     fi
     
-    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.bash_profile > ~/.bash_profile
-    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.vimrc > ~/.vimrc
     
+    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.dotfiles/.vimrc > ~/.vimrc
+    wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.dotfiles/.bash_profile > ~/.bash_profile
     wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.dotfiles/.bash_files > ~/.dotfiles/.bash_files
     wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.dotfiles/.bash_history > ~/.dotfiles/.bash_history
     wget -q -O - "$@" https://raw.github.com/rnosworthy/personal/master/.dotfiles/.bash_prompt > ~/.dotfiles/.bash_prompt
