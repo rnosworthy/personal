@@ -4,6 +4,7 @@ alias vi='sudo vi'
 alias apre='sudo apachectl restart'
 alias apa='cd /private/etc/apache2/'
 alias crm='cd ~/Repositories/oss/crm'
+alias cpd='cp -r ~/.dotfiles ~/Repositories/personal/'
 
 # SSH auto-completion based on entries in known_hosts.
 if [[ -e ~/.ssh/known_hosts ]]; then
@@ -14,8 +15,9 @@ fi
 #    complete -o default -W "$(cat ~/.ssh/config | sed '' | sort | uniq)"
 #fi
 
-export PATH="/usr/local/bin/:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/git/bin:$PATH"
-export PATH="/usr/local/mysql/bin:$PATH"
-export PATH="/usr/local/pcre/bin:$PATH"
+export PATH="/usr/local/bin:/sw/bin:/usr/local/sbin:/usr/local/git/bin:/usr/local/mysql/bin:/usr/local/pcrew/bin:$PATH"
+export PGDATA=/usr/local/var/postgres
+export PHP_AUTOCONF="usr/local/bin/autoconf"
+
+
+alias udb='/usr/libexec/locate.updatedb'
