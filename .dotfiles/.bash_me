@@ -3,8 +3,9 @@ alias repos='cd ~/Repositories'
 alias vi='sudo vi'
 alias apre='sudo apachectl restart'
 alias apa='cd /private/etc/apache2/'
-alias crm='cd ~/Repositories/oss/crm'
+alias crm='cd ~/Workspace/oss/crm'
 alias cpd='cp -r ~/.dotfiles ~/Repositories/personal/'
+alias udb='sudo /usr/libexec/locate.updatedb'
 
 # SSH auto-completion based on entries in known_hosts.
 if [[ -e ~/.ssh/known_hosts ]]; then
@@ -19,5 +20,3 @@ export PATH="/usr/local/bin:/sw/bin:/usr/local/sbin:/usr/local/git/bin:/usr/loca
 export PGDATA=/usr/local/var/postgres
 export PHP_AUTOCONF="usr/local/bin/autoconf"
 
-
-alias udb='/usr/libexec/locate.updatedb'
