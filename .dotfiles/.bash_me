@@ -4,6 +4,7 @@ alias vi='sudo vi'
 alias apre='sudo apachectl restart'
 alias apa='cd /private/etc/apache2/'
 alias crm='cd ~/Workspace/oss/crm'
+alias oss='cd ~/Workspace/oss/'
 alias cpd='cp -r ~/.dotfiles ~/Repositories/personal/'
 alias udb='sudo /usr/libexec/locate.updatedb'
 
