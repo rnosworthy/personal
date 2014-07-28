@@ -7,8 +7,9 @@ alias crm='cd ~/Workspace/oss/crm'
 alias oss='cd ~/Workspace/oss/'
 alias cpd='cp -r ~/.dotfiles ~/Repositories/personal/'
 alias udb='sudo /usr/libexec/locate.updatedb'
-alias composer='php composer'
-alias swagger='php swagger'
+alias gs='git status'
+alias swagger='php ~/Workspace/oss/crm/lib/vendor/zircote/swagger-php/swagger.phar'
+alias composer='php ~/Workspace/oss/crm/lib/composer.phar'
 
 # SSH auto-completion based on entries in known_hosts.
 if [[ -e ~/.ssh/known_hosts ]]; then
@@ -19,7 +20,7 @@ fi
 #    complete -o default -W "$(cat ~/.ssh/config | sed '' | sort | uniq)"
 #fi
 
-export PATH="/usr/local/bin:/sw/bin:/usr/local/sbin:/usr/local/git/bin:/usr/local/mysql/bin:/usr/local/pcrew/bin:$PATH"
+export PATH="/usr/local/bin:/sw/bin:/usr/local/sbin:/usr/local/git/bin:/usr/local/mysql/bin:/usr/local/pcrew/bin:/Library/WebServer/oss/crm/lib/vendor/bin:$PATH"
 export PGDATA=/usr/local/var/postgres
 export PHP_AUTOCONF="usr/local/bin/autoconf"
 
