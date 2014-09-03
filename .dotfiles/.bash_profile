@@ -6,8 +6,8 @@ if [ -f ~/.dotfiles/.bash_share ]; then
     . ~/.dotfiles/.bash_share
 fi
 
-if [ -f ~/.dotfiles/.bash_me ]; then
-    . ~/.dotfiles/.bash_me
+if [ -f ~/.dotfiles/.bash_local ]; then
+    . ~/.dotfiles/.bash_local
 fi
 
 if [ -f ~/.dotfiles/.bash_prompt ]; then
