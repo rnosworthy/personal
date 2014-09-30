@@ -8,7 +8,7 @@ alias oss='cd ~/Workspace/oss/'
 alias cpd='cp -r ~/.dotfiles ~/Repositories/personal/'
 alias udb='sudo /usr/libexec/locate.updatedb'
 alias gs='git status'
-alias swagger='php ~/Workspace/oss/crm/lib/vendor/zircote/swagger-php/swagger.phar ~/Workspace/oss/crm/colony/ -o ~/Workspace/oss/crm/public/api-docs --bootstrap ~/Workspace/oss/crm/colony/config/swagger.php'
+alias swagger='php ~/Workspace/oss/crm/lib/vendor/zircote/swagger-php/swagger.phar ~/Workspace/oss/crm/colony/ -o ~/Workspace/oss/crm/public/api-docs --bootstrap ~/Workspace/oss/crm/config/swagger.php'
 alias composer='php ~/Workspace/oss/crm/lib/composer.phar'
 alias eclipse='open -n /Applications/eclipse/Eclipse.app'
 
@@ -23,5 +23,5 @@ fi
 
 export PATH="/usr/local/bin:/sw/bin:/usr/local/sbin:/usr/local/git/bin:/usr/local/mysql/bin:/usr/local/pcrew/bin:/Library/WebServer/oss/crm/lib/vendor/bin:$PATH"
 export PGDATA=/usr/local/var/postgres
-export PHP_AUTOCONF="usr/local/bin/autoconf"
+export PHP_AUTOCONF="/usr/local/bin/autoconf"
 

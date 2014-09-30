@@ -1,0 +1,11 @@
+function updateapi(){
+    oss
+    echo "Fetching master branch from github"
+    git fetch --all
+    git reset --hard origin/master
+    cd crm/lib
+    echo "Installing Dependencies"
+    composer install 
+    echo "Updating Swagger"
+    swagger
+}
